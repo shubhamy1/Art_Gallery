@@ -1,0 +1,64 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+<!-- <my-app>loading</my-app> -->
+
+<link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+        data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" routerLink="/">Art Exhibition</a>
+    </div>
+
+    <!-- Navbar Right -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active">
+          <a routerLink="/home">Home</a>
+        </li>
+        <li>
+          <a routerLink="/about">About</a>
+        </li>
+        <li>
+          <a (click)="openUploadDialog()">Upload</a>
+        </li>
+        <li>
+          <a routerLink="/viewAction">Check Your Business</a>
+        </li>
+        <!-- <li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Member
+						<span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li>
+							<a href="/register">Register</a>
+						</li>
+						<li>
+							<a href="/login">Login</a>
+						</li>
+					</ul>
+				</li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- <div ng-init ="getAllImages()"></div> -->
+ 
+  <router-outlet></router-outlet>
+  <div class="footer">
+    <div class="footer-contents">
+      <br>
+      <h2>Contact Us</h2>
+      <span>+91-9876543210</span><br>
+      <span>artexhibition@gmail.com</span><br>
+          <span>Art Exhibition, Globally, India</span><br><br>
+    </div>
+  </div>
